@@ -1,0 +1,19 @@
+apiSpec:
+      tool: Jenkins
+      type: Get
+      tokenMode: False
+      sslMode: False
+#need to check sslMode for testing 
+data:
+      url: http://localhost:8080/job/DAI-Test/api/json
+      headers:
+        - key: Content-Type
+          value: application/json
+        - key: Authorization
+          value: Basic
+      token: 
+        - key: username
+          value: admin
+        - key: password
+          value: admin
+
